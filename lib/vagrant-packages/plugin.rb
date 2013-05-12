@@ -17,6 +17,11 @@ module VagrantPlugins
       packages on the host if the OS is supported
       DESC
 
+      config(:repositories) do
+        require File.expand_path('../config/repositories', __FILE__)
+        RepositoriesConfig
+      end
+
     end
   end
 end

@@ -23,5 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'vagrant', '~> 1.2'
+  spec.add_development_dependency 'awesome_print'
 
 end

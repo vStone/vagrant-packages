@@ -1,5 +1,7 @@
 require 'pathname'
 
+require 'vagrant-packages/plugin'
+
 module VagrantPlugins
   module Packages
     lib_path = Pathname.new(File.expand_path('../vagrant-packages', __FILE__))

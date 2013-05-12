@@ -22,6 +22,16 @@ module VagrantPlugins
         RepositoriesConfig
       end
 
+      config(:packages, :provisioner) do
+        require File.expand_path('../config/packages', __FILE__)
+        PackagesConfig
+      end
+
+      provisioner(:packages) do
+        require_relative 'provisioner'
+        Provisioner
+      end
+
     end
   end
 end

@@ -32,6 +32,14 @@ module VagrantPlugins
         Provisioner
       end
 
+      guest_capability('linux', 'has_yum') do
+        Cap::Linux::Yum
+      end
+
+      guest_capability('redhat', 'has_yum') do
+        Cap::RedHat::Yum
+      end
+
     end
   end
 end

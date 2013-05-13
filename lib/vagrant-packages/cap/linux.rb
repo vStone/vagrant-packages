@@ -1,8 +1,8 @@
 module VagrantPlugins
   module Packages
     module Cap
-      module RedHat
-        autoload :Yum, 'vagrant-packages/cap/redhat/yum'
+      module Linux
+        autoload :Yum, 'vagrant-packages/cap/linux/yum'
       end
     end
   end
